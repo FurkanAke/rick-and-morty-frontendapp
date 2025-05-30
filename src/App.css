@@ -1,0 +1,108 @@
+/* Genel arka plan rengi */
+body {
+  background-color: #f0f2f5; /* Hafif gri tonu */
+  font-family: 'Roboto', 'Arial', sans-serif; /* Roboto fontunu tercih et */
+}
+
+/* Ana Container bileşeni için stil */
+.MuiContainer-root {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08); /* Belirgin bir gölge */
+  border-radius: 16px; /* Daha fazla yuvarlak köşeler */
+  padding: 40px !important; /* Daha fazla iç boşluk */
+  background-color: #ffffff; /* Beyaz arka plan */
+  margin-top: 40px !important; /* Üstten boşluk */
+  margin-bottom: 40px !important; /* Alttan boşluk */
+}
+
+/* Başlık (h4) için stil */
+.MuiTypography-h4 {
+  color: #2c3e50; /* Koyu gri/mavi tonu */
+  font-weight: 700 !important; /* Daha kalın font */
+  text-align: center; /* Ortala */
+  margin-bottom: 30px !important; /* Alt boşluk */
+  letter-spacing: 0.5px; /* Harf aralığı */
+}
+
+/* Filtreleme/Sıralama/Sayfa Boyutu kutuları için stil */
+.MuiBox-root[sx*="border: 1px solid #ddd"] {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05); /* Hafif gölge */
+  border: none !important; /* Varsayılan kenarlığı kaldır */
+  border-radius: 12px !important; /* Köşeleri yuvarla */
+  transition: all 0.3s ease-in-out; /* Geçiş efekti */
+}
+
+.MuiBox-root[sx*="border: 1px solid #ddd"]:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Hover'da daha belirgin gölge */
+}
+
+/* TextField ve Select input'ları için kenarlık ve odaklanma stili */
+.MuiOutlinedInput-root {
+  border-radius: 8px !important; /* Inputların köşelerini yuvarla */
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #ced4da !important; /* Pasifken daha açık gri kenarlık */
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #6c757d !important; /* Hover'da daha koyu gri */
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #3f51b5 !important; /* Odaklandığında ana renk */
+  box-shadow: 0 0 0 0.2rem rgba(63, 81, 181, 0.25); /* Hafif gölge efekti */
+}
+
+/* Düğmeler için gölge ve hover efekti */
+.MuiButton-root {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12); /* Daha belirgin düğme gölgesi */
+  transition: all 0.3s ease-in-out;
+  text-transform: none !important; /* Büyük harf olmasın */
+  font-weight: 600 !important;
+  border-radius: 8px !important; /* Köşeleri yuvarla */
+}
+
+.MuiButton-root:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.18);
+  transform: translateY(-2px); /* Hafif yukarı kalkma efekti */
+}
+
+/* Tablo başlıkları */
+.MuiBox-root[sx*="fontWeight: 'bold']"] { /* Başlık kutusu için seçici */
+  background-color: #e0e0e0; /* Varsayılan gri */
+  color: #333; /* Koyu yazı */
+  padding: 12px 10px !important; /* Üst/alt boşluğu artır */
+  border-radius: 8px 8px 0 0; /* Sadece üst köşeleri yuvarla */
+}
+
+/* Karakter listesi satırları için hover efekti */
+.MuiBox-root > div > div[style*="cursor: pointer"] {
+  transition: background-color 0.2s ease-in-out, border-left 0.2s ease-in-out;
+}
+
+.MuiBox-root > div > div[style*="cursor: pointer"]:hover {
+  background-color: #e8f5e9 !important; /* Hafif yeşilimsi arka plan */
+}
+
+/* Seçili karakter detayı için daha belirgin bir görünüm */
+.MuiBox-root[sx*="border: 1px solid #007bff"] {
+  box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.25); /* Daha belirgin ve mavi tonlarda gölge */
+  border: none !important; /* Kenarlığı kaldır */
+  background-color: #e6f7ff; /* Açık mavi arka plan */
+}
+
+/* Resimlerin köşelerini yuvarla */
+img[style*="borderRadius: 50%"] {
+  border: 2px solid #3f51b5; /* Karakter resimlerine ana renkte çerçeve */
+}
+
+img[style*="width: 150px"] { /* Detaydaki büyük resim */
+  border: 3px solid #3f51b5;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Detay metinleri için daha iyi okunabilirlik */
+.MuiBox-root[sx*="border: 1px solid #007bff"] .MuiTypography-body1 {
+  margin-bottom: 5px;
+  color: #333;
+}
