@@ -52,3 +52,6 @@ export default tseslint.config({
   },
 })
 ```
+## Canlı Uygulama
+
+Canlı uygulamaya buradan erişebilirsiniz: [Rick and Morty Uygulaması](https://rick-and-morty-frontendapp-ltze.vercel.app/)
