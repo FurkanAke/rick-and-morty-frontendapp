@@ -7,7 +7,10 @@ import axios from 'axios';
 // `verbatimModuleSyntax` ayarı etkinleştirildiğinde oluşabilecek hataları önler.
 // 'Character' doğrudan bir değer olarak okunmadığı için oluşan uyarıyı kapatmak için
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { type ApiResponse, type Character } from './types';
+// src/api.ts
+import { type ApiResponse } from './types'; // Sadece ApiResponse import edin
+// Veya eğer type anahtar kelimesi kullanılıyorsa:
+// import { type ApiResponse } from './types';
 
 // Rick and Morty API'sinin temel URL'si sabit olarak tanımlanmıştır.
 const BASE_URL = 'https://rickandmortyapi.com/api';
